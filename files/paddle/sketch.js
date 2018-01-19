@@ -1,5 +1,6 @@
 var p
 var b
+var p2
 function setup(){
         x=0;
         createCanvas(window.innerWidth,window.innerHeight);
