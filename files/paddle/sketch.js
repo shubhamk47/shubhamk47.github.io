@@ -3,7 +3,7 @@ var b
 var p2
 function setup(){
         x=0;
-        createCanvas(window.innerWidth,window.innerHeight);
+        createCanvas(windowWidth,windowHeight);
         p = new paddle(0);
         p2 = new paddle(width-15);
         b = new ball()
