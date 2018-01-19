@@ -4,7 +4,11 @@ var y;
 function setup() {
         //x = window.innerWidth;
         //y = 800;
-        createCanvas(1000, 900);
+        x = window.innerWidth;
+        y = window.innerHeight;
+        y = y - y%10;
+        x = x - x%10;
+        createCanvas(x, y);
         frameRate(15);
         s = new snake();
         put();
