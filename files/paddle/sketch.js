@@ -19,6 +19,16 @@ class paddle{
                 this.down = true;
         }
 
+        reset(x){
+                this.x = x;
+                this.y = height/2 - 150;
+                this.a = 0;
+                this.xspeed = 0;
+                this.yspeed = 0;
+                this.up = true;
+                this.down = true;
+        }
+
         move(){
                 this.x = this.x + this.xspeed * 10;
                 this.y = this.y + this.yspeed * 10;
@@ -99,6 +109,8 @@ class ball{
                 this.y = height/2;
                 this.ax = -5;
                 this.ay = floor(random(4));
+                p.reset(0);
+                p2.reset(width - 15);
         }
 }
 
