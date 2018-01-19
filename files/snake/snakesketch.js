@@ -4,7 +4,7 @@ var y;
 function setup() {
         //x = window.innerWidth;
         //y = 800;
-        createCanvas(1000, 800);
+        createCanvas(1000, 900);
         frameRate(15);
         s = new snake();
         put();
