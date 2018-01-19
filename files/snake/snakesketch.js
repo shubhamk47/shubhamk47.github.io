@@ -3,8 +3,7 @@ var x;
 var y;
 function setup() {
         x = window.innerWidth;
-        y = window.innerHeight;
-        y = y - 26
+        y = 800;
         createCanvas(x, y);
         frameRate(15);
         s = new snake();
