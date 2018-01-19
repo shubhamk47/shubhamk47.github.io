@@ -2,9 +2,9 @@ var food;
 var x;
 var y;
 function setup() {
-        x = window.innerWidth;
-        y = 800;
-        createCanvas(x, y);
+        //x = window.innerWidth;
+        //y = 800;
+        createCanvas(1000, 800);
         frameRate(15);
         s = new snake();
         put();
