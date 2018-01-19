@@ -2,9 +2,16 @@ var food;
 var x;
 var y;
 function setup() {
-        //x = window.innerWidth;
-        //y = 800;
-        createCanvas(1000, 900);
+        x = window.innerWidth;
+        y = window.innerHeight;
+        dx = x % 20;
+        console.log(dx)
+        dy = y % 20;
+        console.log(dy)
+        x = x - dx;
+        y = y - dy;
+        console.log(x,y)
+        createCanvas(x, y);
         frameRate(15);
         s = new snake();
         put();
@@ -15,11 +22,12 @@ function put(){
         //console.log(r);
         var c = floor(y/20);
         food = createVector((floor(random(r))*20),(floor(random(c))*20));
+        console.log(food.x);
 }
 
 function snake(){
         this.x = 0;
-        this.y = floor(height/2) - 20;
+        this.y = 0;
         this.xspeed = 0;
         this.yspeed = 0;
         this.l = 0;
