@@ -1,11 +1,28 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Marketplace
+Explore
+ @shubhamk47
+ Sign out
+ Watch 0
+  Star 0  Fork 0 shubhamk47/shubhamk47.github.io
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
+Branch: master Find file Copy pathshubhamk47.github.io/files/snake/snakesketch.js
+a5b4889  3 minutes ago
+@shubhamk47 shubhamk47 Update snakesketch.js
+1 contributor
+RawBlameHistory     
+93 lines (82 sloc)  2.41 KB
 var food;
 var x;
 var y;
 function setup() {
-        x = window.innerWidth;
-        y = window.innerHeight;
-        y = y - y%10;
-        createCanvas(x, y);
+        //x = window.innerWidth;
+        //y = 800;
+        createCanvas(1000, 900);
         frameRate(15);
         s = new snake();
         put();
