@@ -19,10 +19,8 @@ class paddle{
                 this.down = true;
         }
 
-        moveup(){
+        move(){
                 this.x = this.x + this.xspeed * 10;
-        }
-        movedown(){
                 this.y = this.y + this.yspeed * 10;
         }
 
@@ -34,6 +32,7 @@ class paddle{
 
 
         draw(){
+                this.move();
                 rect(this.x,this.y,15,150);
                 if(this.y + 150 >= height){
                         this.down = false;
@@ -105,10 +104,10 @@ class ball{
 
 function keyPressed(){
         if(keyCode === UP_ARROW && p.up === true){
-                p.moveup();
+                p.key(0,-1);
                 p.down = true;
         }else if(keyCode === DOWN_ARROW && p.down === true){
-                p.movedown();
+                p.key(0,1);
                 p.up = true;
         }
 
