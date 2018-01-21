@@ -5,12 +5,9 @@ function setup() {
         x = window.innerWidth;
         y = window.innerHeight;
         dx = x % 20;
-        console.log(dx)
         dy = y % 20;
-        console.log(dy)
         x = x - dx;
         y = y - dy;
-        console.log(x,y)
         createCanvas(x, y);
         frameRate(15);
         s = new snake();
